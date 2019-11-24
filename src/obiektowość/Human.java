@@ -1,3 +1,7 @@
+package obiektowość;
+
+import dziedziczenie.Man;
+
 public class Human {
 
     private String name;
@@ -5,7 +9,7 @@ public class Human {
     private Integer birthYear;
     private Integer age;
 
-    Human ( String name, String surname, Integer birthYear) {
+    public Human ( String name, String surname, Integer birthYear) {
         this.name = name;
         this.surname = surname;
         this.birthYear = birthYear;
@@ -33,6 +37,12 @@ public class Human {
 
     public void setBirthYear(Integer birthYear) {
         this.birthYear = birthYear;
+
+        Man mezczyzna1 = new Man("Kazik", "Szulc", 1987);
+        mezczyzna1.setWaga(70);
+        mezczyzna1.ocenSile();
+        mezczyzna1.przedstawSie();
     }
+
 }
 
