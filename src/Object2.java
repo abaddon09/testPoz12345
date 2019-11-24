@@ -1,3 +1,5 @@
+import obiektowość.Car;
+
 public class Object2 {
     public static void main(String[] args) {
 
